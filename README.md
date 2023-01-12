@@ -1,5 +1,4 @@
-# arch-config
-Some of my arch configs: 
+# Dotfiles
 
 - [alacritty](https://github.com/fernandorego/arch-config/blob/master/alacritty/alacritty.yml)
 - [dunst](https://github.com/fernandorego/arch-config/blob/master/dunst/dunstrc)
