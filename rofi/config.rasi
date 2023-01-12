@@ -1,0 +1,69 @@
+configuration {
+  modes: [ combi ];
+  combi-modes: [ window, drun, run ];
+  drun-display-format: "{name}";
+  font: "JetBrainsMono Nerd Font Medium 10";
+  show-icons: true;
+}
+
+@theme "/dev/null"
+
+* {
+  /*
+  bg: #11121D;
+  bg: #383740;
+  bg: #292b3d;
+  bg: #282933;
+  */
+
+  bg: #363742; 
+  bg-alt: #444b6a;
+
+  fg: #FFFFFF;
+  fg-alt: #a7a5b0;
+
+  background-color: @bg;
+}
+
+window {
+  width: 25%;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  children: [entry];
+}
+
+entry {
+  background-color: @bg-alt;
+  padding: 12;
+  text-color: @fg;
+}
+
+listview {
+  columns: 1;
+  lines: 5;
+}
+
+element {
+  padding: 12;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg;
+}
+
+element-text {
+  highlight: bold;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 16;
+  padding: 0 5 0 0;
+}
